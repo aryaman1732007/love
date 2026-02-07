@@ -37,3 +37,53 @@
 
 </body>
 </html>
+<br><br>
+<button onclick="yesClicked()">YES ❤️</button>
+<button onclick="noClicked()">NO 🙈</button>
+
+<script>
+function yesClicked() {
+  alert("YAYYYY ❤️ I knew it 💍💖");
+}
+function noClicked() {
+  alert("Please think again 🥺💔");
+}
+</script>
+
+<style>
+button{
+  font-size:20px;
+  padding:10px 25px;
+  margin:10px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+</style>
+<button id="noBtn">NO 🙈</button>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+noBtn.addEventListener("mouseover", () => {
+  noBtn.style.position = "absolute";
+  noBtn.style.left = Math.random() * 80 + "vw";
+  noBtn.style.top = Math.random() * 80 + "vh";
+});
+</script>
+<div class="heart">❤️</div>
+
+<style>
+.heart{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  font-size:40px;
+  animation:float 2s infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-20px);}
+  100%{transform:translateY(0);}
+}
+</style>
+
